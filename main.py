@@ -9,5 +9,5 @@ from pybricks.media.ev3dev import SoundFile, ImageFile
 ev3 = EV3Brick()
 samleBånd = Motor(Port.B)
 
-samleBånd.run(10)
-wait(10000)
+# samleBånd.run(10)
+# wait(10000)
