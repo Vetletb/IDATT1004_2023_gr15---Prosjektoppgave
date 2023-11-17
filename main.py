@@ -27,6 +27,36 @@ fart = 100
 sorteringTid = 1500
 fargeMargin = 1.25
 
+#Kalibrerings verdier
+
+rødRødL = 21 * (2 - fargeMargin)
+rødRødH = 26 * fargeMargin
+rødGrønnL = 2 * (2 - fargeMargin)
+rødGrønnH = 3 * fargeMargin
+rødBlåL = 0 * (2 - fargeMargin)
+rødBlåH = 5 * fargeMargin
+
+grønnRødL = 7 * (2 - fargeMargin)
+grønnRødH = 10 * fargeMargin
+grønnGrønnL = 20 * (2 - fargeMargin)
+grønnGrønnH = 27 * fargeMargin
+grønnBlåL = 4 * (2 - fargeMargin)
+grønnBlåH = 11 * fargeMargin
+
+gulRødL = 42 * (2 - fargeMargin)
+gulRødH = 51 * fargeMargin
+gulGrønnL = 34 * (2 - fargeMargin)
+gulGrønnH = 38 * fargeMargin
+gulBlåL = 15 * (2 - fargeMargin)
+gulBlåH = 20 * fargeMargin
+
+oransjeRødL = 44 * (2 - fargeMargin)
+oransjeRødH = 51 * fargeMargin
+oransjeGrønnL = 7 * (2 - fargeMargin)
+oransjeGrønnH = 9 * fargeMargin
+oransjeBlåL = 3 * (2 - fargeMargin)
+oransjeBlåH = 9 * fargeMargin
+
 #Starter programmet når knapp presses
 while not knapp.pressed():
     continue
@@ -52,8 +82,9 @@ while not knapp.pressed():
                     (Hrød, Hgrønn, Hblå) = (rød, grønn, blå) 
                 (rød, grønn, blå) = fargeSensor.rgb()
         if Hrød > 0 or Hgrønn > 0 or Hblå > 0:
+            print(Hrød, Hgrønn, Hblå)
             #sjekker om rød
-            if Hrød >= 22 and Hrød <= 29 and Hgrønn >= 0 and Hgrønn <= 5 and Hblå <= 7:
+            if Hrød >= rødRødL and Hrød <= rødRødH and Hgrønn >= rødGrønnL and Hgrønn <= rødGrønnH and Hblå <= rødBlåH:
                 if gjeldendeBeholder - rødBeholder > 0:
                     beholder.run_time(fart, abs(gjeldendeBeholder - rødBeholder))
                 else:
@@ -64,7 +95,7 @@ while not knapp.pressed():
                 print("rød")
 
             #sjekker om grønn
-            elif Hrød >= 8 and Hrød <= 14 and Hgrønn >= 21 and Hgrønn <= 28 and Hblå >= 3 and Hblå <= 10:
+            elif Hrød >= grønnRødL and Hrød <= grønnRødH and Hgrønn >= grønnGrønnL and Hgrønn <= grønnGrønnH and Hblå >= grønnBlåL and Hblå <= grønnBlåH:
                 if gjeldendeBeholder - grønnBeholder > 0:
                     beholder.run_time(fart, abs(gjeldendeBeholder - grønnBeholder))
                 else:
@@ -75,7 +106,7 @@ while not knapp.pressed():
                 print("grønn")
 
             #sjekker om gul
-            elif Hrød >= 43 and Hrød <= 54 and Hgrønn >= 32 and Hgrønn <= 37 and Hblå >= 13  and Hblå <= 24:
+            elif Hrød >= gulRødL and Hrød <= gulRødH and Hgrønn >= gulGrønnL and Hgrønn <= gulGrønnH and Hblå >= gulBlåL and Hblå <= gulBlåH:
                 if gjeldendeBeholder - gulBeholder > 0:
                     beholder.run_time(fart, abs(gjeldendeBeholder - gulBeholder))
                 else:
@@ -86,7 +117,7 @@ while not knapp.pressed():
                 print("gul")
 
             #sjekker om oransje
-            elif Hrød >= 42 and Hrød <= 53 and Hgrønn >= 5 and Hgrønn <= 11 and Hblå >= 1  and Hblå <= 11:
+            elif Hrød >= oransjeRødL and Hrød <= oransjeRødH and Hgrønn >= oransjeGrønnL and Hgrønn <= oransjeGrønnH and Hblå >= oransjeBlåL  and Hblå <= oransjeBlåH:
                 if gjeldendeBeholder - oransjeBeholder > 0:
                     beholder.run_time(fart, abs(gjeldendeBeholder - oransjeBeholder))
                 else:
