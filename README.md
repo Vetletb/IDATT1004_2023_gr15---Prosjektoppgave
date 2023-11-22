@@ -9,11 +9,7 @@ Sorterer ulike objekter som legges på samlebåndet i en av fire ulike beholdere
 
 
 ## Video og bilder
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true"
-    <source src="https://gitlab.stud.idi.ntnu.no/carinemr/idatt1004_2023_gr15-prosjektoppgave/-/blob/main/Media/10000000_24234439519504156_1795635800846122043_n.mp4?ref_type=heads" type="video/mp4">
-  </video>
-</figure>
+![Video demo](https://gitlab.stud.idi.ntnu.no/carinemr/idatt1004_2023_gr15-prosjektoppgave/-/blob/main/Media/10000000_24234439519504156_1795635800846122043_n.mp4?ref_type=heads)
 
 
 ## Installasjon
