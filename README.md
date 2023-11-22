@@ -38,7 +38,7 @@ Team 15 går dessverre i oppløsning 24. november, det vil ikke være mulighet f
 
 ## Forfattere
 Fargesorteringsmaskinen er utviklet av de flotte medlemmene av Team 15; Vetle Traran Bjørnøy, Hong An Ho, Edvard Granheim Harbo, Cathrine Evensen og Carine Margrethe Rondeel.
-For mer info se [about team](.../-/wikis/about%20team)
+For mer info se [about team](.../.../-/wikis/about%20team)
 
 
 ## Produkt status
