@@ -7,6 +7,7 @@ from pybricks.tools import wait, StopWatch, DataLog
 from pybricks.robotics import DriveBase
 from pybricks.media.ev3dev import SoundFile, ImageFile
 
+#Definerer motorer og sensorer
 ev3 = EV3Brick()
 samleBånd = Motor(Port.B)
 beholder = Motor(Port.D)
@@ -14,7 +15,7 @@ fargeSensor = ColorSensor(Port.S3)
 knapp = TouchSensor(Port.S2)
 
 
-
+#Klasse for farge som skal sorteres, tar inn navn, hvilken beholder den skal i, og kalibrerte rgb verider.
 class Farge:
     beholderTid = 1050
 
@@ -24,7 +25,7 @@ class Farge:
         self.rgbLav = rgbLav
         self.rgbHøy = rgbHøy
 
-
+#Register av fargene som skal sorteres
 class FargeRegister:
     def __init__ (self):
         self.fargeDictionary = {}
@@ -35,7 +36,7 @@ class FargeRegister:
     def HentFarge(self, nøkkel):
         return self.fargeDictionary[nøkkel]
 
-
+#Klasse for å sortere farge
 class FargeSorterer:
     avfallBeholder = 2100
     gjeldendeBeholder = 0
@@ -51,7 +52,8 @@ class FargeSorterer:
         self.beholder = beholder
         self.fargeSensor = fargeSensor
         self.knapp = knapp
-        
+    
+    #Starter selve programmet
     def Start(self):
         while not knapp.pressed():
             continue
@@ -82,6 +84,7 @@ class FargeSorterer:
 
             wait(2000)
 
+    #Metode for å finne den beste fargemålingen mens fargesensor registrerer objekt
     def StørstFargeVerdi(self):
         (rød, grønn, blå) = fargeSensor.rgb()
         Hrød = 0
@@ -98,6 +101,7 @@ class FargeSorterer:
         
         return [Hrød, Hgrønn, Hblå]
 
+    #Metode for å sjekke om målt fargeverdier er er innenfor en farge i registeret
     def ErFarge(self, farge, rgb):
         resultat = False
         rgbLav = [x * (2 - self.fargeMargin) for x in farge.rgbLav]
@@ -114,11 +118,12 @@ class FargeSorterer:
             print(farge.farge)
         return resultat
 
+    #Metode for å nullstille beholderen til standard posisjon
     def NullstillBeholder(self):
         beholder.run_time(self.beholderFart, 4200)
         self.gjeldendeBeholder = 0
 
-
+#Metode for å kalibrere fargeverdier, brukes kun av admin for å endre farger som sorteres eller rekalibrere gjeldende farger
 class KalibrerFarge:
     def KalibrerFarge():
         while True:
@@ -137,7 +142,7 @@ class KalibrerFarge:
                 print(Hrød, Hgrønn, Hblå)
 
                 
-
+#innisialiserer farge objekter, farge register og farge sorterer
 rød = Farge("red", 1, [21, 2, 0], [26, 3, 5])
 grønn = Farge("green", 2, [7, 20, 4], [10, 27, 11])
 gul = Farge("yellow", 4, [42, 34, 15], [51, 38, 20])
@@ -152,4 +157,5 @@ fargeRegister.LeggTilFarge(oransje)
 
 fargeSorterer = FargeSorterer(fargeRegister, ev3, samleBånd, beholder, fargeSensor, knapp)
 
+#Starter programmet
 fargeSorterer.Start()
