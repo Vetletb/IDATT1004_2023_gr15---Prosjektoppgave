@@ -37,8 +37,7 @@ Team 15 går dessverre i oppløsning 24. november, det vil ikke være mulighet f
 
 
 ## Forfattere
-Fargesorteringsmaskinen er utviklet av de flotte medlemmene av Team 15; Vetle Traran Bjørnøy, Hong An Ho, Edvard Granheim Harbo, Cathrine Evensen og Carine Margrethe Rondeel.
-For mer info se [about team](https://gitlab.stud.idi.ntnu.no/carinemr/idatt1004_2023_gr15-prosjektoppgave/-/wikis/about%20team)
+Fargesorteringsmaskinen er utviklet av de flotte medlemmene av Team 15; [Vetle Traran Bjørnøy](https://gitlab.stud.idi.ntnu.no/carinemr/idatt1004_2023_gr15-prosjektoppgave/-/wikis/About-team/Vetle%20Traran%20Bjørnøy), [Hong An Ho](https://gitlab.stud.idi.ntnu.no/carinemr/idatt1004_2023_gr15-prosjektoppgave/-/wikis/About-team/Hong-An-Ho), [Edvard Granheim Harbo](https://gitlab.stud.idi.ntnu.no/carinemr/idatt1004_2023_gr15-prosjektoppgave/-/wikis/About-team/Edvard-Granheim-Harbo), [Cathrine Evensen](https://gitlab.stud.idi.ntnu.no/carinemr/idatt1004_2023_gr15-prosjektoppgave/-/wikis/About-team/Cathrine-Evensen) og [Carine Margrethe Rondeel](https://gitlab.stud.idi.ntnu.no/carinemr/idatt1004_2023_gr15-prosjektoppgave/-/wikis/About-team/Carine-Margrethe-Rondeel).
 
 
 ## Produkt status
