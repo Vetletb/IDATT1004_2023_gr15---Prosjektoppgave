@@ -2,31 +2,38 @@
 
 
 ## Fargesorteringsmaskin
+En Farge sorterer
 
 ## Beskrivelse
-Sorterer skittles som legges på samlebåndet i en av fire ulike beholdere etter farge. Ved uønskede farger vil disse bli sortert i en egen avfallsbeholder. ps. programmet fungerer ekslusivt på fargesorteringsmaksinen til Team 15.
+Sorterer ulike objekter som legges på samlebåndet i en av fire ulike beholdere etter farge. Ved uønskede farger vil disse bli sortert i en egen avfallsbeholder, så du kan nyte en feilfri sortering. Sorteren har en rekke avanserte funksjonaliteter. Den vil sortere opptil fire farger etter forhåndskalibrerte verdier (skittles kommer som standard), eventuelt så mange farger du vil fordelt på de fire beholderne. Du har også muligheten til å manuelt tilbakestille sortereren ved feil under sortering. ps. programmet fungerer ekslusivt på fargesorteringsmaksinen til Team 15.
 
 
 ## Video og bilder
 Legge til video og bilder?
 
+
 ## Intallasjon
 Når du har mottatt din splitter nye fargesorteringsmaskin er det svært enkelt å sette i gang. Først må du plugge inn den medfølgende laderen. Maskinen er oppladet, kan den enkelt skrus på ved å trykke på den runde knappen på ev3-en. Programmet kommer ferdig installert i maskinen og du trenger kun starte programmet. Dette gjøres ved å velge "files" fra menyen og navigere til "idatt1003_2023_gr15/main.py". Tilse at beholderen er plassert helt til venstre. Maskinen er nå klar til bruk!
+
 
 ## Bruker instuksjoner
 Under vil du finne informasjon om hvordan du benytter deg av de ulike funskjonaliteten til fargesorteren.
 
+
 ### Slå på/av
 Etter at installasjonsprossesen er ferdig, er du klar til å starte maskinen. Dette gjøres enkelt ved å trykke på den røde knappen, vent til beholderen er i startposisjon (når beholderen er sentrert om samlebåndet). Maskinen kan slås av igjen ved å holde inne den samme knappen i 2-3 sekunder.
+
 
 ### Sortere skittles
 For å sortere en skittle trenger du kun legge den ned på starten av samlebåndet, vent med å legge på en ny til beholderen har er tilbake i startposisjon.
 
+
 ### Manuelt tilbakestille beholderposjisjon
 Hvis du skulle oppdage at beholderens posisjon har blitt usynkronisert med der programmet tror den er lokalisert (beholderen går ikke tilbake til startposisjon), kan på knappen trykkes inn for å tilbakestille beholderen.
 
+
 ## Støtte
-Team 15 går dessverre i oppløsning 24. november, det vil ikke være mulighet for å kontakte oss ved eventuelle feil eller spørsmål.
+Team 15 går dessverre i oppløsning 24. november, det vil ikke være mulighet for å kontakte oss ved eventuelle feil eller spørsmål fra denne datoen.
 
 
 ## Forfattere
@@ -35,6 +42,7 @@ Fargesorteringsmaskinen er utviklet av de flotte medlemmene av Team 15; Vetle Tr
 
 ## Produkt status
 Produktet er ferdig konstruert og programmert, og vil ikke bli videre støttet eller utviklet av utviklerene.
+
 
 ## FAQ
 Kan jeg sortere andre ting enn skittles?
@@ -45,3 +53,6 @@ Hva skjer om jeg mister en non-stop eller annet objekt som ikke er ment å sorte
 
 Hva skjer om jeg legger på en ny skittles før maskinen er klar for å sortere en ny?
  - Konsekvensen avhenger av hvor tidlig den ble lagt på, den vil enten havne i feil fargebeholder hvis beholderen ikke rekker å komme tilbake til start, eller så vil den simpelt havne i avfallsbeholderen. 
+
+Hvorfor sluttet sorteren å sortere riktig?
+ - Hvis fargesorteren slutter å fungere kan dette være tegn på at en ny kalibrering er nødvendig. Dette kan være forårsaket av endring i miljø, eller at fargesensoren ikke leser samme verdier som sist den ble kalibrert. Se "støtte" for hjelp
