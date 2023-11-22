@@ -9,8 +9,10 @@ Sorterer ulike objekter som legges på samlebåndet i en av fire ulike beholdere
 
 
 ## Video og bilder
+![oversiktsbilde](https://gitlab.stud.idi.ntnu.no/carinemr/idatt1004_2023_gr15-prosjektoppgave/-/blob/main/Media/Bilde1.jpg?raw=true)
+
 Sorterer skittles etter farge og kaster nonstop i avfall.
-![Video demo](https://gitlab.stud.idi.ntnu.no/carinemr/idatt1004_2023_gr15-prosjektoppgave/-/blob/main/Media/10000000_24234439519504156_1795635800846122043_n.mp4?ref_type=heads)
+![Video demo](https://gitlab.stud.idi.ntnu.no/carinemr/idatt1004_2023_gr15-prosjektoppgave/-/blob/main/Media/10000000_24234439519504156_1795635800846122043_n.mp4?ref_type=heads?raw=true)
 
 
 ## Installasjon
