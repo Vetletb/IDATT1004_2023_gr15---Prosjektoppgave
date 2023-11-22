@@ -16,7 +16,7 @@ Legge til video og bilder?
 Når du har mottatt din splitter nye fargesorteringsmaskin er det svært enkelt å sette i gang. Først må du plugge inn den medfølgende laderen. Maskinen er oppladet, kan den enkelt skrus på ved å trykke på den runde knappen på ev3-en. Programmet kommer ferdig installert i maskinen og du trenger kun starte programmet. Dette gjøres ved å velge "files" fra menyen og navigere til "idatt1003_2023_gr15/main.py". Tilse at beholderen er plassert helt til venstre. Maskinen er nå klar til bruk!
 
 
-## Bruker instuksjoner
+## Bruker instruksjoner
 Under vil du finne informasjon om hvordan du benytter deg av de ulike funskjonaliteten til fargesorteren.
 
 
